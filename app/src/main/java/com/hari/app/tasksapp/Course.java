@@ -1,8 +1,17 @@
 package com.hari.app.tasksapp;
 
-public class Course {
-    private String courseName;
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
+public class Course extends RealmObject {
+    public String courseName;
+    @PrimaryKey
     private String courseCode;
+
+    public Course() {
+        courseName="";
+        courseCode="";
+    }
 
     public Course(String courseName, String courseCode) {
         this.courseName = courseName;

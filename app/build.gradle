@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 28
@@ -26,4 +27,8 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //Realm dependency
+    implementation 'io.realm:android-adapters:2.1.1'
+    //Material Theme dependency
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
 }
